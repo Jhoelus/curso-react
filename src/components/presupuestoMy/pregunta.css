@@ -1,0 +1,38 @@
+h4 {
+    text-align: left;
+}
+
+.card {
+    background-color: #E0DEDC
+}
+
+.presupuesto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formGastos h4{
+    color: black;
+}
+
+.formGastos form{
+    margin: 20px;
+}
+
+.formGastos {
+    width: 100%;
+    min-width: 100%;
+}
+
+.msgAlert {
+    text-align: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.item {
+    padding-right: 10px;
+    text-align: left;
+}

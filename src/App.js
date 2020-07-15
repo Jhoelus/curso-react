@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, Fragment } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import NotasMy from './components/notasMy/Notas'
+import Presupuesto from './components/presupuestoMy/Presupuesto'
+import NavBar from "./components/navBar/NavBar"
+import Login from "./components/login/Login"
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
+
+  const [isLoggin, setisLoggin] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        { isLoggin &&
+          <Fragment>
+              <NavBar />
+          </Fragment>
+        }
+        <Switch>
+          <Route path="/notas">
+              <NotasMy />
+          </Route>
+          <Route path="/presupuesto">
+              <Presupuesto />
+          </Route>
+          <Route path="/">
+              <Login setisLoggin={setisLoggin} isLoggin={isLoggin} />
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 
