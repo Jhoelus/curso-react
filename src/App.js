@@ -12,6 +12,7 @@ import {
   Route
 } from "react-router-dom";
 import Cotizador from './components/cotizadorMy/Cotizador';
+import Breaking from './components/breaking-bad/Breaking';
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/cotizador">
             <Cotizador />
+          </Route>
+          <Route path="/breaking-bad">
+            <Breaking />
           </Route>
           <Route path="/">
               <Login setisLoggin={setisLoggin} isLoggin={isLoggin} />

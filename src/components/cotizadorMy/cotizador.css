@@ -36,3 +36,7 @@ input:focus{
 .container div {
     justify-content: space-around !important;
 }
+
+.fondo {
+    background-image: url(fondo1.jpg);
+}

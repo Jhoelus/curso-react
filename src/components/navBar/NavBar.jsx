@@ -20,6 +20,9 @@ export default function NavBar() {
               <li className="nav-item">
                 <Link to="/cotizador" className="nav-link" >Cotizador</Link>
               </li>
+              <li className="nav-item">
+                <Link to="/breaking-bad" className="nav-link" >Breaking</Link>
+              </li>
             </ul>
           </div>
         </nav>
