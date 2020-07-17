@@ -11,6 +11,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Cotizador from './components/cotizadorMy/Cotizador';
 
 function App() {
 
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/presupuesto">
               <Presupuesto />
+          </Route>
+          <Route path="/cotizador">
+            <Cotizador />
           </Route>
           <Route path="/">
               <Login setisLoggin={setisLoggin} isLoggin={isLoggin} />

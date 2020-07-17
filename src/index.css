@@ -76,3 +76,26 @@ code {
   width: 80%;
   margin: 15px;
 }
+
+/* Transiciones */
+.resultado-enter {
+  transition: .5s;
+}
+
+.resultado-enter.resultado-enter-active {
+  transform: translateY(0%);
+}
+
+.resultado-exit {
+  transition: translateY(0);
+  transition: .5s;
+  position: absolute;
+  /* left: 10; */
+  bottom: 50;
+  right: 0;
+}
+
+.resultado-exit-active {
+  opacity: 0;
+  /* transform: translateY(0%); */
+}

@@ -17,6 +17,9 @@ export default function NavBar() {
               <li className="nav-item">
                 <Link to="/presupuesto" className="nav-link" >Presupuesto</Link>
               </li>
+              <li className="nav-item">
+                <Link to="/cotizador" className="nav-link" >Cotizador</Link>
+              </li>
             </ul>
           </div>
         </nav>
